@@ -1,319 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>My Introduction Website</title>
-  <style>
-    /* Global Styles */
-    
-    * {
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
-      margin: 0;
-    }
-    
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    
-    .container {
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
-    /* Header Styles */
-    
-    header {
-      background-color: #f9f9f9;
-      border-bottom: 1px solid #e5e5e5;
-      padding: 20px 0;
-    }
-    
-    header h1 {
-      color: #333;
-      font-size: 36px;
-      font-weight: bold;
-      margin: 0;
-    }
-    
-    nav {
-      display: inline-block;
-    }
-    
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    nav li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-    
-    nav li:last-child {
-      margin-right: 0;
-    }
-    
-    nav a {
-      color: #333;
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    
-    /* Main Styles */
-    
-    main {
-      padding: 50px 0;
-    }
-    
-    section {
-      margin-bottom: 50px;
-    }
-    
-    h2 {
-      color: #333;
-      font-size: 30px;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-    
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    
-    .col {
-      flex: 1;
-      margin-right: 20px;
-    }
-    
-    .col:last-child {
-      margin-right: 0;
-    }
-    
-    p {
-      color: #666;
-      font-size: 18px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    
-    img {
-      width: 100%;
-      height: auto;
-    }
-    
-    .button-primary,
-    .button-secondary {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: uppercase;
-      border-radius: 5px;
-      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    }
-    
-    .button-primary {
-      background-color: #007bff;
-      color: #fff;
-    }
-    
-    .button-secondary {
-      background-color: #f9f9f9;
-      color: #333;
-      border: 2px solid #e5e5e5;
-    }
-    
-    .button-primary:hover,
-    .button-secondary:hover {
-      cursor: pointer;
-    }
-    
-    /* Skills Styles */
-    
-    .skills {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .skills li {
-      margin-bottom: 20px;
-    }
-    
-    .skills h3 {
-      color: #333;
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    
-    .skill-level {
-      width: 100%;
-      height: 20px;
-      background-color: #f9f9f9;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-    
-    .skill-level-bar {
-      height: 100%;
-      background-color: #007bff;
-      border-radius: 5px;
-      transition: width 0.2s ease-in-out;
-    }
-    
-    .skill-level-90 {
-      width: 90%;
-    }
-    
-    .skill-level-80 {
-      width: 80%;
-    }
-    
-    .skill-level-70 {
-      width: 70%;
-    }
-    
-    /* Projects Styles */
-    
-    .projects {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .projects li {
-      display: flex;
-      margin-bottom: 50px;
-    }
-    
-    .project-image {
-      flex: 1;
-    }
-    
-    .project-info {
-      flex: 2;
-      padding-left: 50px;
-    }
-    
-    .project-info h3 {
-      color: #333;
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    
-    .project-info p {
-      color: #666;
-      font-size: 18px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    
-    /* Footer Styles */
-    
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px 0;
-    }
-    
-    footer p {
-      margin: 0;
-    }
-    
-    footer a {
-      color: #fff;
-      text-decoration: underline;
-    }
-    
-    @media screen and (max-width: 768px) {
-      header h1 {
-        font-size: 30px;
-      }
-      
-      nav {
-        display: block;
-        margin-bottom: 20px;
-      }
-      
-      nav li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
-      
-      .row {
-        flex-direction: column;
-      }
-      
-      .col {
-        flex: 1 0 auto;
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-    }
-  </style>
+	<title>My Group Introduction</title>
+	<!-- Add a link to a CSS stylesheet to style your website -->
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>My Introduction Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
-  <main>
-    <div class="container">
-      <section>
-        <h2>Welcome to my website!</h2>
-        <div class="row">
-          <div class="col">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ligula non risus varius lacinia. Nullam auctor, ex sed tincidunt bibendum, odio dui pretium velit, id iaculis urna ex sit amet tortor. Etiam tempor, nunc sed efficitur finibus, mauris quam commodo odio, in bibendum nibh velit eget ex. Suspendisse potenti. Duis vel lacus velit. Nam sed elit non leo convallis semper vel id eros. Sed eget elit auctor, aliquet justo in, varius orci. Donec ac quam vel sem tristique fringilla. Nullam sit amet diam est.</p>
-          </div>
-          <div class="col">
-            <img src="https://via.placeholder.com/500x500" alt="Placeholder Image">
-          </div>
-        </div>
-        <a href="#" class="button-primary">Learn More</a>
-      </section>
-      
-      <section>
-        <h2>About Me</h2>
-        <div class="row">
-          <div class="col">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ligula non risus varius lacinia. Nullam auctor, ex sed tincidunt bibendum, odio dui pretium velit, id iaculis urna ex sit amet tortor. Etiam tempor, nunc sed efficitur finibus, mauris quam commodo odio, in bibendum nibh velit eget ex. Suspendisse potenti. Duis vel lacus velit. Nam sed elit non leo convallis semper vel id eros. Sed eget elit auctor, aliquet justo in, varius orci. Donec ac quam vel sem tristique fringilla. Nullam sit amet diam est.</p>
-          </div>
-          <div class="col">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ligula non risus varius lacinia. Nullam auctor, ex sed tincidunt bibendum, odio dui pretium velit, id iaculis urna ex sit amet tortor. Etiam tempor, nunc sed efficitur finibus, mauris quam commodo odio, in bibendum nibh velit eget ex. Suspendisse potenti. Duis vel lacus velit. Nam sed elit non leo convallis semper vel id eros. Sed eget elit auctor, aliquet justo in, varius orci. Donec ac quam vel sem tristique fringilla. Nullam sit amet diam est.</p>
-          </div>
-        </div>
-        <a href="#" class="button-primary">Learn More</a>
-      </section>
-      
-      <section>
-        <h2>My Skills</h2>
-        <ul class="skills">
-          <li>
-            <h3>HTML</h3>
+	<!-- Add a header to your website with a title and navigation links -->
+	<header>
+		<h1>My Group Introduction</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#services">Our Services</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Add a section about your group -->
+	<section id="about">
+		<h2>About Us</h2>
+		<p>We are a group of individuals who are passionate about delivering high-quality services to our clients. Our team consists of experts in various fields, including web development, graphic design, and marketing.</p>
+	</section>
+
+	<!-- Add a section about your services -->
+	<section id="services">
+		<h2>Our Services</h2>
+		<ul>
+			<li>Web Development</li>
+			<li>Graphic Design</li>
+			<li>Marketing Strategy</li>
+			<li>Social Media Management</li>
+			<li>Content Creation</li>
+		</ul>
+	</section>
+
+	<!-- Add a section to contact your group -->
+	<section id="contact">
+		<h2>Contact Us</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+			<input type="submit" value="Send">
+		</form>
+	</section>
+
+	<!-- Embed the Web Chat iframe to your HTML code -->
+	<iframe src='https://webchat.botframework.com/embed/Azure_Bot_marco?s=YOUR_SECRET_HERE'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+
+	<!-- Add a footer to your website with copyright information -->
+	<footer>
+		<p>&copy; 2023 My Group Introduction. All rights reserved.</p>
+	</footer>
+
+	<!-- Add a script to load the Web Chat JavaScript library and initialize the chatbot -->
+	<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+	<script>
+		window.WebChat.renderWebChat({
+			directLine: window.WebChat.createDirectLine({ token: 'YOUR_DIRECT_LINE_SECRET' }),
+			userID: 'YOUR_USER_ID',
+			username: 'YOUR_USERNAME',
+			locale: 'en-US',
+			botAvatarInitials: 'BB'
+		}, document.getElementsByTagName('iframe')[0].contentWindow.document.body);
+	</script>
+</body>
+</html>
